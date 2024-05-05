@@ -1,4 +1,6 @@
-# Discord_Bot
+# Discord Bot project
+##### Travis Montgomery (aba9jj) and Joe Thompson (zwt4pb)
+
 DS2002: DS Systems Final Project pt2
 
 
