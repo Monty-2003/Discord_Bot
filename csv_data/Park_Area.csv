@@ -1,0 +1,66 @@
+﻿OBJECTID,PARK_TYPE,PARKNAME,WEBURL
+1,COMMUNITY,Greenbrier Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/greenbrer-park
+2,COMMUNITY,Meadowcreek Gardens & Disc Golf,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/meadow-creek-valley
+3,NEIGHBORHOOD,Greenleaf Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/greenleaf-park
+4,NEIGHBORHOOD,Northeast Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/northeast-park
+6,COMMUNITY,Riverview Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/riverview-park-rivanna-trail
+7,COMMUNITY,Meade Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/meade-park
+8,NEIGHBORHOOD,Forest Hills Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/forest-hills-park
+25,COMMUNITY,Quarry Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/quarry-park
+26,NEIGHBORHOOD,Rives Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/rives-park
+27,URBAN PARK,McGuffey Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/mcguffey-park
+28,URBAN PARK,Market Street Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/lee-park
+29,URBAN PARK,Court Square Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/jackson-park
+31,NEIGHBORHOOD,Fifeville Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/fifeville-park
+33,COMMUNITY,Azalea Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/azalea-park
+59,REGIONAL,McIntire Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/mcintire-park
+82,COMMUNITY,Schenk's Greenway,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/schenk-s-greenway
+110,REGIONAL,Pen Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/pen-park
+111,REGIONAL,McIntire Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/mcintire-park
+112,NEIGHBORHOOD,Washington Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/washington-park
+113,COMMUNITY,Tonsler Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/tonsler-park
+114,NEIGHBORHOOD,Belmont Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/belmont-park
+115,NEIGHBORHOOD,Jordan Park,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/jordan-park
+133,CEMETERY,Maplewood Cemetery,http://www.charlottesville.org/parks
+134,CEMETERY,Oakwood Cemetery,http://www.charlottesville.org/parks
+140,CIVIC SPACES,Downtown Pavilion,http://www.charlottesville.org/parks
+141,CIVIC SPACES,Downtown Mall,http://www.charlottesville.org/parks
+142,COMMUNITY,,http://www.charlottesville.org/parks
+144,NEIGHBORHOOD,Starr Hill,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/starr-hill-park
+145,URBAN PARK,Rothwell,http://www.charlottesville.org/parks
+146,Possible,Starr Hill expansion,http://www.charlottesville.org/parks
+152,NEIGHBORHOOD,,http://www.charlottesville.org/parks
+153,COMMUNITY,Meadow Creek Valley,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/meadow-creek-valley
+155,NEIGHBORHOOD,Longwood Park,http://www.charlottesville.org/parks
+531,City-County Park,Darden Towe,http://www.albemarle.org/department.asp?department=parks&relpage=2738
+533,NEIGHBORHOOD,Davis Field,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/northeast-park
+535,NEIGHBORHOOD,Fry's Springs,http://www.charlottesville.org/parks
+536,CEMETERY,Daughters of Zion Cemetery,http://www.charlottesville.org/parks
+537,NEIGHBORHOOD,,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/riverview-park-rivanna-trail
+538,NEIGHBORHOOD,,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/riverview-park-rivanna-trail
+539,NEIGHBORHOOD,,http://www.charlottesville.org/parks
+541, ,Mill Park,http://www.charlottesville.org/parks
+548, ,,http://www.charlottesville.org/parks
+549, ,Meadow Creek Valley,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/meadow-creek-valley
+551, ,Belmont Bridge,http://www.charlottesville.org/parks
+552, ,J W Parkway,http://www.charlottesville.org/parks
+553, ,Rock Creek,http://www.charlottesville.org/parks
+953,COMMUNITY,Schenks Greenway,http://www.charlottesville.org/departments-and-services/departments-h-z/parks-recreation/parks-trails/city-parks/schenk-s-greenway
+954, ,Pollocks Branch Trail,
+955, ,Azalea Park West,http://www.charlottesville.org/parks
+958, ,Moores Creek Trail,
+1360, ,Rock Creek Parcel,
+1361,REGIONAL,Ivy Creek Natural Area,https://www.albemarle.org/department.asp?department=parks&relpage=2745
+1362, ,South Fork Reservoir,
+1363, ,Moores Creek Trail,
+1364, ,,
+1365, ,Republic Homes Greenbrier Easement,
+1366, ,Young Nimmo Parcel,
+1371, ,Heyward Community Forest,
+1372, ,Heyward Community Forest,
+1373, ,Jenkins Park,
+1374, , ,
+1375, , ,
+1376, , ,
+1776, ,Bailey Park,
+1777,COMMUNITY,Moores Creek Farm,
