@@ -49,7 +49,7 @@ def ask_openai(question, content=None):
         ],
         temperature=0.5,
         max_tokens=1000,
-        stop=['quit', 'stop']
+        stop=['quit']
     )
     answer = response['choices'][0]['message']['content']
     return answer
@@ -66,7 +66,7 @@ def get_response(user_input: str) -> str:
     elif 'bye' in lowered:
         return "Goodbye, friend! Have a great time in Charlottesville. I will be here whenever you need me again!"
     elif 'help' in lowered:
-        return "You can command !parks, !trails, !transportation, or !crime for specific, up-to-date Charlottesville related information."
+        return "You can command !parks, !trails, !bike, !bus, or !crime for specific, up-to-date Charlottesville related information."
     else:
         load_dotenv()
         OPEN_AI_KEY = os.getenv('OPEN_AI_KEY')
@@ -78,9 +78,12 @@ def get_response(user_input: str) -> str:
         elif '!trails' in lowered:
             trail_dat = get_trail_data()
             return ask_openai("What is some useful information and/or suggestions for Charlottesville trails?", content=trail_dat)
-        elif '!transportation' in lowered:
-            trans_dat = get_trans_data()
-            return ask_openai("List the provided bus stops and bike racks, along with their information.", content=trans_dat)
+        elif '!bike' in lowered:
+            bike_dat = get_bike_data()
+            return ask_openai("What are the provided bike racks in Charlottesville? Include the X and Y coordinates as well as any NOTES.", content=bike_dat)
+        elif '!bus' in lowered:
+            bus_dat = get_bus_data()
+            return ask_openai("What are the provided bus stops in Charlottesville? Include the X and Y coordinates as well as the stop ID and stop name.", content=bus_dat)
         elif '!crime' in lowered:
             crime_dat = get_crime_data()
             return ask_openai("What are the recent crimes in Charlottesville from proided data? Include where and when they happened/were reported.", content=crime_dat)
@@ -127,15 +130,16 @@ def get_trail_data():
         engine.dispose()
 
 
-def get_trans_data():
+def get_bus_data():
     engine = create_engine("mysql+mysqlconnector://aba9jj:aba9jj!@database.ds2002.org/aba9jj")
     conn = engine.connect()
 
     try:
-        bus_query = text("SELECT StopID, StopName FROM bus_stops ORDER BY RAND() LIMIT 2")
+        bus_query = text("SELECT X, Y, StopID, StopName FROM bus_stops ORDER BY RAND() LIMIT 2")
         results = conn.execute(bus_query)
         print(results)
-        return results
+
+        return results 
 
     except Exception as e:
         print("An error occured:", e)
@@ -169,6 +173,25 @@ def get_crime_data():
             crime_data.append((offense, street_name, date_reported, hour_reported))
 
         return crime_data
+
+    except Exception as e:
+        print("An error occured:", e)
+
+    # close connection to db
+    finally:
+        engine.dispose()
+
+
+def get_bike_data():
+    engine = create_engine("mysql+mysqlconnector://aba9jj:aba9jj!@database.ds2002.org/aba9jj")
+    conn = engine.connect()
+
+    try:
+        bike_query = text("SELECT X, Y, NOTES FROM bike_racks WHERE NOTES IS NOT NULL ORDER BY RAND() LIMIT 3")
+        results = conn.execute(bike_query)
+        print(results)
+
+        return results 
 
     except Exception as e:
         print("An error occured:", e)
