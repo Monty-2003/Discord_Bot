@@ -10,3 +10,8 @@ The Discord Bot provided is trained to query the MySQL database based on user co
 
 
 To utilize the Charlottesville Bot, a user must first have Discord downloaded. The test server used to host this bot can be joined at [this link](https://discord.gg/tU9qUCXe). (Note: Discord server inite links expire every 7 days, so it's likely the provided link is expired if you attempt to join.) Alternatively, this repository can be cloned to your local machine and used to instantiate the Charlottesville Discord Bot on your own created Discord server. Visit [Discord Developers](https://discord.com/developers/docs/intro) for more information on creating your Bot and connecting it to a server to be able to utilize this Python repository for Bot functionality.
+
+
+<p align="center">
+  <img src="" />
+</p>
