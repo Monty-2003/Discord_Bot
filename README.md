@@ -13,5 +13,5 @@ To utilize the Charlottesville Bot, a user must first have Discord downloaded. T
 
 
 <p align="center">
-  <img src="" />
+  <img src="/bot_icon.png" />
 </p>
