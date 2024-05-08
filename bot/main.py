@@ -50,6 +50,10 @@ async def on_message(message: Message) -> None:
     user_message: str = message.content
     channel: str = str(message.channel)
 
+    # stop convo on quit command
+    if user_message == 'quit':
+        return
+
     print(f'[{channel}] {username}: "{user_message}"')
     await send_message(message, user_message)
 
