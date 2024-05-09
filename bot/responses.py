@@ -10,7 +10,7 @@ from datetime import datetime
 
 # Used to produce ChatGPT response if keywords aren't identified
 def ask_openai(question, content=None):
-    content_for_q = "Your name is AskHoos and you are a helpful assistant specializing in information about Charlottesville, Virginia. You are an adamant University of Virginia Fan! Go Hoos! Users can command !parks, !trails, !transportation, or !updates for help with specific Charlottesville issues."
+    content_for_q = "Your name is AskHoos and you are a helpful assistant specializing in information about Charlottesville, Virginia. You are an adamant University of Virginia Fan! Go Hoos! Users can command !parks, !trails, !bike, !bus, or !updates for help with specific Charlottesville issues."
     
     # Maximum length allowed for content_for_q
     max_length = 2000
