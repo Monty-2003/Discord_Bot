@@ -10,10 +10,4 @@ def main():
     db_api_ingestion.main()
     db_csv_ingestion.main()
 
-# do this every day to keep real-time data
-schedule.every(1).days.do(main)
-
-
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+main()
