@@ -3,6 +3,7 @@ import pandas as pd
 import openai
 import pymysql
 from dotenv import load_dotenv
+import pytz
 from sqlalchemy import create_engine, select, text
 from datetime import datetime
 
@@ -165,12 +166,14 @@ def get_crime_data():
             street_name = result[1]
             
             # Convert Unix timestamp to datetime object for DateReported
-            date_reported = datetime.fromtimestamp(int(result[2]) / 1000)
-            
+            date_reported = datetime.fromtimestamp(int(result[2]) / 1000, tz=pytz.utc)
+            est_date = date_reported.astimezone(pytz.timezone('America/New_York'))
+
             # Convert HourReported to hour and minute string
-            hour_reported = "{:02}:{:02}".format(int(result[3]) // 100, int(result[3]) % 100)
-            
-            crime_data.append((offense, street_name, date_reported, hour_reported))
+            hour_reported = datetime.fromtimestamp(int(result[3]) / 1000, tz=pytz.utc)
+            est_hour = hour_reported.astimezone(pytz.timezone('America/New_York'))
+
+            crime_data.append((offense, street_name, est_date, est_hour))
 
         return crime_data
 
